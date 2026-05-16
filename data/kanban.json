@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "id": "backlog",
+      "name": "📥 Backlog",
+      "color": "#6c757d",
+      "cards": [
+        { "id": "b1", "title": "Deep Alpha: production extraction pipeline", "tags": ["project", "deep-alpha"], "priority": "medium" },
+        { "id": "b2", "title": "RS Screener: Polygon API integration", "tags": ["project", "rs-screener"], "priority": "low" },
+        { "id": "b3", "title": "PP ArXiv: install & test research scanner", "tags": ["skill"], "priority": "medium" },
+        { "id": "b4", "title": "PP CoinGecko: crypto market data skill", "tags": ["skill"], "priority": "medium" },
+        { "id": "b5", "title": "Personal Ops: event rules activation", "tags": ["personal-ops"], "priority": "low" },
+        { "id": "b6", "title": "Trading coach: broker CSV review", "tags": ["skill", "trading"], "priority": "low" },
+        { "id": "b7", "title": "Rotate Brave API key (Telegram exposure)", "tags": ["security"], "priority": "medium" },
+        { "id": "b8", "title": "Rotate GitHub PAT (Telegram exposure)", "tags": ["security"], "priority": "medium" }
+      ]
+    },
+    {
+      "id": "in-progress",
+      "name": "🔄 In Progress",
+      "color": "#0d6efd",
+      "cards": [
+        { "id": "p1", "title": "Rocket Wiki: Kanban board", "tags": ["rocket-wiki"], "priority": "high" },
+        { "id": "p2", "title": "RSS monitor: source tuning & dedup", "tags": ["personal-ops"], "priority": "medium" },
+        { "id": "p3", "title": "SignalDeck: false positive cleanup (FRS, LEAPS)", "tags": ["signaldeck"], "priority": "medium" }
+      ]
+    },
+    {
+      "id": "done",
+      "name": "✅ Done (this session)",
+      "color": "#198754",
+      "cards": [
+        { "id": "d1", "title": "Brave Search: upgrade from DuckDuckGo", "tags": ["search"] },
+        { "id": "d2", "title": "Security audit + hardening", "tags": ["security"] },
+        { "id": "d3", "title": "PP SEC EDGAR: install & test", "tags": ["skill"] },
+        { "id": "d4", "title": "PP Yahoo Finance: install & test", "tags": ["skill"] },
+        { "id": "d5", "title": "Skills discovery ranked report", "tags": ["report"] },
+        { "id": "d6", "title": "RSS/news monitor + morning digest cron", "tags": ["personal-ops"] },
+        { "id": "d7", "title": "@frsinvesting to SignalDeck", "tags": ["signaldeck"] },
+        { "id": "d8", "title": "Rocket Wiki v1: scaffold + deploy", "tags": ["rocket-wiki"] },
+        { "id": "d9", "title": "BTC multi-timeframe market analysis", "tags": ["trading", "analysis"] },
+        { "id": "d10", "title": "RStack audit: Rocket Wiki", "tags": ["rstack"] }
+      ]
+    }
+  ]
+}

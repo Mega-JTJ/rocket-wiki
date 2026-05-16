@@ -188,6 +188,51 @@ def build_cron() -> None:
     render_page(DOCS / "cron-jobs.md", {marker: "\n".join(lines)})
 
 
+# ── kanban.md ──────────────────────────────────────────────────
+
+def build_kanban() -> None:
+    marker = "<!-- KANBAN_BOARD -->"
+    kanban_json = WIKI / "data" / "kanban.json"
+    
+    if not kanban_json.exists():
+        render_page(DOCS / "kanban.md", {marker: "*Kanban data not found.*"})
+        return
+    
+    data = json.loads(kanban_json.read_text())
+    columns = data.get("columns", [])
+    
+    html_parts = ['<div class="kanban-board">']
+    
+    col_colors = {"backlog": "#37474f", "in-progress": "#1a237e", "done": "#1b5e20"}
+    
+    for col in columns:
+        col_id = col.get("id", "")
+        col_name = col.get("name", "?")
+        bg = col_colors.get(col_id, col.get("color", "#333"))
+        html_parts.append(f'<div class="kanban-column" style="background:{bg}">')
+        html_parts.append(f'<h3>{col_name} <small>({len(col.get("cards",[]))})</small></h3>')
+        
+        for card in col.get("cards", []):
+            priority = card.get("priority", "")
+            priority_class = f"priority-{priority}" if priority else ""
+            html_parts.append(f'<div class="kanban-card {priority_class}">')
+            html_parts.append(f'<div>{card["title"]}</div>')
+            tags = card.get("tags", [])
+            if tags:
+                html_parts.append('<div class="tags">')
+                for tag in tags:
+                    html_parts.append(f'<span class="tag">{tag}</span>')
+                html_parts.append('</div>')
+            html_parts.append('</div>')
+        
+        html_parts.append('</div>')
+    
+    html_parts.append('</div>')
+    html_parts.append(f'<p style="font-size:0.8rem;color:var(--md-default-fg-color--light);margin-top:1rem;">Last updated: {timestamp()} · Edit <code>rocket-wiki/data/kanban.json</code></p>')
+    
+    render_page(DOCS / "kanban.md", {marker: "\n".join(html_parts)})
+
+
 # ── system.md ───────────────────────────────────────────────────
 
 def build_system() -> None:
@@ -240,6 +285,7 @@ def main() -> None:
     build_index()
     build_projects()
     build_reports()
+    build_kanban()
     build_skills()
     build_cron()
     build_system()

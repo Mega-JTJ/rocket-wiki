@@ -54,9 +54,13 @@ nav:
   - 🏠 Home: index.md
   - 🚀 Projects: projects.md
   - 📊 Reports: reports.md
+  - 📋 Kanban: kanban.md
   - 🛠 Skills: skills.md
   - ⏰ Cron Jobs: cron-jobs.md
   - 🖥 System: system.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   generator: false
