@@ -1,0 +1,62 @@
+site_name: Rocket Wiki
+site_description: Jack's personal operating system — projects, reports, skills, and automation
+site_author: Rocket & Jack
+repo_url: https://github.com/jtjones0/rocket-wiki
+edit_uri: ""
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    logo: material/rocket-launch
+  favicon: https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f680.svg
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - 🏠 Home: index.md
+  - 🚀 Projects: projects.md
+  - 📊 Reports: reports.md
+  - 🛠 Skills: skills.md
+  - ⏰ Cron Jobs: cron-jobs.md
+  - 🖥 System: system.md
+
+extra:
+  generator: false
