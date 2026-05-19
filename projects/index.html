@@ -650,7 +650,7 @@
 <h2 id="signaldeck">SignalDeck<a class="headerlink" href="#signaldeck" title="Permanent link">&para;</a></h2>
 <p>X/Twitter idea and catalyst intake engine. Scrapes tracked accounts, extracts ticker signals, scores and ranks them.</p>
 <p><strong>Path:</strong> <code>projects/x-stock-signal-index/</code></p>
-<p><strong>Tracked accounts (10 active):</strong></p>
+<p><strong>Tracked accounts (11 active):</strong></p>
 <table>
 <thead>
 <tr>
@@ -699,18 +699,22 @@
 <td>@frsinvesting</td>
 <td>✅</td>
 </tr>
+<tr>
+<td>@mvcinvesting</td>
+<td>✅</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Output:</strong> Nightly rankings PDF pushed to Telegram at 23:45 London.</p>
 <p><strong>Data flow:</strong>
-1. Nitter RSS → scrape recent posts from tracked accounts
+1. Nitter RSS / configured scrape source → recent posts from tracked accounts
 2. Import → parse ticker mentions, direction, conviction
 3. Score → multi-factor ranking algorithm
 4. Report → PDF generation + Telegram delivery</p>
 <hr />
 <h2 id="rs-screener">RS Screener<a class="headerlink" href="#rs-screener" title="Permanent link">&para;</a></h2>
 <p>Price and relative-strength confirmation engine. Scans broad US market universe with sector/industry mapping and liquidity filters.</p>
-<p><strong>Path:</strong> <code>projects/rs-screener/</code> (TBC)</p>
+<p><strong>Path:</strong> workspace scripts/data under <code>scripts/</code>, <code>data/</code>, and <code>reports/</code></p>
 <p><strong>Status:</strong> Active. Nightly scan of US market universe with sector/industry mapping.</p>
 <hr />
 <h2 id="deep-alpha">Deep Alpha<a class="headerlink" href="#deep-alpha" title="Permanent link">&para;</a></h2>
@@ -723,14 +727,14 @@
 <p><strong>Path:</strong> <code>personal_ops/</code></p>
 <p><strong>Capabilities:</strong>
 - Calendar context briefs
-- RSS/news signal digest (weekday mornings)
-- Event rules engine (draft)</p>
-<p><strong>RSS Digest:</strong> Available (last generated: check <a href="../reports/">Reports</a>)</p>
+- RSS/news signal digest
+- Event rules engine</p>
+<p><strong>RSS Digest:</strong> Available</p>
 <p><strong>Calendar:</strong> Read-only Google Calendar integration active.</p>
 <hr />
 <h2 id="rocket-wiki">Rocket Wiki<a class="headerlink" href="#rocket-wiki" title="Permanent link">&para;</a></h2>
-<p>This wiki itself. Auto-rebuilt and deployed on a schedule.</p>
-<p><strong>Path:</strong> <code>rocket-wiki/</code>
+<p>This wiki itself. Auto-rebuilt and deployed hourly.</p>
+<p><strong>Path:</strong> <code>rocket-wiki/</code><br />
 <strong>Deploy:</strong> GitHub Pages</p>
 
 
