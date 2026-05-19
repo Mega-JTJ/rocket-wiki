@@ -6,7 +6,7 @@ X/Twitter idea and catalyst intake engine. Scrapes tracked accounts, extracts ti
 
 **Path:** `projects/x-stock-signal-index/`
 
-**Tracked accounts (10 active):**
+**Tracked accounts (11 active):**
 
 | Handle | Active |
 |---|---|
@@ -20,12 +20,12 @@ X/Twitter idea and catalyst intake engine. Scrapes tracked accounts, extracts ti
 | @DeepValueBagger | ✅ |
 | @BULLOFBRITAIN | ✅ |
 | @frsinvesting | ✅ |
-
+| @mvcinvesting | ✅ |
 
 **Output:** Nightly rankings PDF pushed to Telegram at 23:45 London.
 
 **Data flow:**
-1. Nitter RSS → scrape recent posts from tracked accounts
+1. Nitter RSS / configured scrape source → recent posts from tracked accounts
 2. Import → parse ticker mentions, direction, conviction
 3. Score → multi-factor ranking algorithm
 4. Report → PDF generation + Telegram delivery
@@ -36,7 +36,7 @@ X/Twitter idea and catalyst intake engine. Scrapes tracked accounts, extracts ti
 
 Price and relative-strength confirmation engine. Scans broad US market universe with sector/industry mapping and liquidity filters.
 
-**Path:** `projects/rs-screener/` (TBC)
+**Path:** workspace scripts/data under `scripts/`, `data/`, and `reports/`
 
 **Status:** Active. Nightly scan of US market universe with sector/industry mapping.
 
@@ -60,10 +60,10 @@ Cross-references Google Calendar, Contacts, and local context for relationship-a
 
 **Capabilities:**
 - Calendar context briefs
-- RSS/news signal digest (weekday mornings)
-- Event rules engine (draft)
+- RSS/news signal digest
+- Event rules engine
 
-**RSS Digest:** Available (last generated: check [Reports](reports.md))
+**RSS Digest:** Available
 
 **Calendar:** Read-only Google Calendar integration active.
 
@@ -71,7 +71,7 @@ Cross-references Google Calendar, Contacts, and local context for relationship-a
 
 ## Rocket Wiki
 
-This wiki itself. Auto-rebuilt and deployed on a schedule.
+This wiki itself. Auto-rebuilt and deployed hourly.
 
-**Path:** `rocket-wiki/`
+**Path:** `rocket-wiki/`  
 **Deploy:** GitHub Pages

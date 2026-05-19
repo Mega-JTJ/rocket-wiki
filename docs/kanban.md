@@ -78,62 +78,62 @@
 </div>
 <div class="kanban-column" style="background:#1b5e20">
 <h3>✅ Done (this session) <small>(10)</small></h3>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>Brave Search: upgrade from DuckDuckGo</div>
 <div class="tags">
 <span class="tag">search</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>Security audit + hardening</div>
 <div class="tags">
 <span class="tag">security</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>PP SEC EDGAR: install & test</div>
 <div class="tags">
 <span class="tag">skill</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>PP Yahoo Finance: install & test</div>
 <div class="tags">
 <span class="tag">skill</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>Skills discovery ranked report</div>
 <div class="tags">
 <span class="tag">report</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>RSS/news monitor + morning digest cron</div>
 <div class="tags">
 <span class="tag">personal-ops</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>@frsinvesting to SignalDeck</div>
 <div class="tags">
 <span class="tag">signaldeck</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>Rocket Wiki v1: scaffold + deploy</div>
 <div class="tags">
 <span class="tag">rocket-wiki</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>BTC multi-timeframe market analysis</div>
 <div class="tags">
 <span class="tag">trading</span>
 <span class="tag">analysis</span>
 </div>
 </div>
-<div class="kanban-card ">
+<div class="kanban-card priority-">
 <div>RStack audit: Rocket Wiki</div>
 <div class="tags">
 <span class="tag">rstack</span>
@@ -141,6 +141,4 @@
 </div>
 </div>
 </div>
-<p style="font-size:0.8rem;color:var(--md-default-fg-color--light);margin-top:1rem;">Last updated: 2026-05-16 17:21:19 UTC · Edit <code>rocket-wiki/data/kanban.json</code></p>
-
-*Run the rebuild script to populate.*
+<p style="font-size:0.8rem;color:var(--md-default-fg-color--light);margin-top:1rem;">Last updated: 2026-05-19 05:55:51 UTC · Edit <code>rocket-wiki/data/kanban.json</code></p>
