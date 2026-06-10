@@ -557,10 +557,10 @@
 
 
 <h1 id="system-status">🖥 System Status<a class="headerlink" href="#system-status" title="Permanent link">&para;</a></h1>
-<p><em>Snapshot: 2026-06-10 14:01:11 UTC</em></p>
+<p><em>Snapshot: 2026-06-10 16:00:56 UTC</em></p>
 <p><strong>Host:</strong> <code>DESKTOP-4HQPOBC</code>
 <strong>OS:</strong> <code>Linux DESKTOP-4HQPOBC 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux</code>
-<strong>OpenClaw:</strong> <code>OpenClaw 2026.5.7 (eeef486)</code>
+<strong>OpenClaw:</strong> <code>OpenClaw 2026.6.5 (5181e4f)</code>
 <strong>Node:</strong> <code>v24.14.1</code></p>
 <h3 id="gateway">Gateway<a class="headerlink" href="#gateway" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>Service: systemd user (enabled)
@@ -577,13 +577,18 @@ Probe target: ws://127.0.0.1:18789
 Dashboard: http://127.0.0.1:18789/
 Probe note: Loopback-only gateway; only local clients can connect.
 
-Runtime: running (pid 10957, state active, sub running, last exit 0, reason 0)
+CLI version: 2026.6.5 (~/.npm-global/bin/openclaw)
+Gateway version: 2026.6.5
+
+Runtime: running (pid 2851, state active, sub running, last exit 0, reason 0)
 Connectivity probe: ok
 Capability: admin-capable
 
-Listening: 127.0.0.1:18789
+Listening: 127.0.0.1:18789, [::1]:18789
+Plugin version drift: 1 active official plugin not on gateway 2026.6.5
+Run openclaw gateway status --deep for affected plugin ids and fix commands.
+
 Troubles: run openclaw status
-Troubleshooting: https://docs.openclaw.ai/troubleshooting
 </code></pre></div>
 
 
